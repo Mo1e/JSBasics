@@ -1,0 +1,15 @@
+let a = [11,2,555,9,1,17, -1];
+let b = [];
+let max;
+while (a.length > 0) {
+  max = 0;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] > a[max]) {
+      max = i;
+    } 
+  }
+  b.push(a[max]);
+  a.splice(max,1)
+}
+console.log(a)
+console.log(b)
