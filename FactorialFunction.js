@@ -32,3 +32,14 @@ let fact = b[2];
   }alert(`Факториал ${a} равен ${fact}`);
   return(fact);
 }
+
+/* upgraded */
+function factorial(a){
+  let fact = 1;
+  for (let i = 2; i <= a; i++){
+    fact = fact * i;
+  }
+  console.log(fact);
+  return(fact);
+}
+factorial(5)
